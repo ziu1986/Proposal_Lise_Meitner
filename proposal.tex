@@ -10,7 +10,7 @@
 \usepackage{chemformula}                % Chemical formulas
 % Bibliography with biblatex
 %\usepackage[authordate-trad, backend=biber]{biblatex-chicago}
-\usepackage[citestyle=alphabetic,bibstyle=authoryear, citestyle=authoryear,sorting=ynt, backend=biber]{biblatex} 
+\usepackage[citestyle=alphabetic,bibstyle=authoryear, citestyle=authoryear, maxbibnames=10, maxcitenames=2, sorting=ynt, backend=biber]{biblatex} 
 \addbibresource[location=local, datatype=bibtex]{proposal.bib} 
 \usepackage{csquotes, xpatch}
 \usepackage{etex, etoolbox, keyval, ifthen, url} % Needed for chicago-style citations
@@ -18,15 +18,15 @@
 \chapterstyle{bringhurst}               % Style for memoir
 \graphicspath{{pictures/}}              % Set graphics path
 
-%\newcommand{\pcite}{\parencite}
+\newcommand{\pcite}[1]{\parencite{#1}}
 
 \begin{document}
   \chapter{Overview}
   Earth System Model history, missing links and knowledge gaps…
 
-Ozone is an important trace gas in the atmosphere. In accordance with its effects and realm of occurence, we can distinguish the good (stratosphere), the bad (troposphere), and the ugly (ambient air) ozone. Here we shall focus on the connection and feedback between the bad and the ugly sides of ozone. Ozone is ranked third amongst the most potent climate forcers. It contributes to warming in the troposphere where it is produced as a secondary air pollutant in chemical cycles involving precursors such as \ch{CO} and \ch{NO_x} as well as hydrocarbons (VOC, BVOC). Ozone is highly toxic and harmful to human health and many ecosystems. Despite a successful reduction of precursors in recent years leading to a stagnation of the upward trend in tropospheric ozone concentrations, there are indications that climate feedback on the uptake by land biosphere can hamper reaching the ultimate air quality goal (Lin, 2020). In drought conditions, plants will limit their transpiration by closing their stomata. Uptake through plants’ stomata is considered one of the most effective removal pathways of ozone but large uncertainties in non-stomatal removal remain (\parencite{RG:Clifton2020}). At the same time, a high uptake of ozone considerably affects photosynthetic and stomatal uptake capacities but differently strongly. Accounting for this, \cite{BGS:Lombardozzi2013} could explain observed variation in photosynthesis in global scales. Franz et al. (2021) show potential ozone damage on vegetation under climate change scenarios involving explicit modeling on the plant physiological level. These previous studies have not included an online atmospheric chemistry. Here, we want to combine the efforts of process understanding at the vegetation level into a fully coupled ESM with atmospheric chemistry and state-of-the-art nutrient limited carbon sequestration and study the feedback of ozone damage and thermal stress on air quality targets and climate.
+Ozone is an important trace gas in the atmosphere. In accordance with its effects and realm of occurence, we can distinguish the good (stratosphere), the bad (troposphere), and the ugly (ambient air) ozone. Here we shall focus on the connection and feedback between the bad and the ugly sides of ozone. Ozone is ranked third amongst the most potent climate forcers. It contributes to warming in the troposphere where it is produced as a secondary air pollutant in chemical cycles involving precursors such as \ch{CO} and \ch{NO_x} as well as hydrocarbons (\ch{VOC}, \ch{BVOC}). Ozone is highly toxic and harmful to human health and many ecosystems. Despite a successful reduction of precursors in recent years leading to a stagnation of the upward trend in tropospheric ozone concentrations, there are indications that climate feedback on the uptake by land biosphere can hamper reaching the ultimate air quality goal \pcite{NCC:Lin2020}. In drought conditions, plants will limit their transpiration by closing their stomata. Uptake through plants’ stomata is considered one of the most effective removal pathways of ozone but large uncertainties in non-stomatal removal remain \pcite{RG:Clifton2020}. At the same time, a high uptake of ozone considerably affects photosynthetic and stomatal uptake capacities but differently strongly. Accounting for this, \cite{BGS:Lombardozzi2013} could explain observed variation in photosynthesis in global scales. Franz et al. (2021) show potential ozone damage on vegetation under climate change scenarios involving explicit modeling on the plant physiological level. These previous studies have not included an online atmospheric chemistry. Here, we want to combine the efforts of process understanding at the vegetation level into a fully coupled ESM with atmospheric chemistry and state-of-the-art nutrient limited carbon sequestration and study the feedback of ozone damage and thermal stress on air quality targets and climate.
 
-%\bibliographystyle{natbib}
+\newpage
 \printbibliography[env=bibliography]
 
 \end{document}
