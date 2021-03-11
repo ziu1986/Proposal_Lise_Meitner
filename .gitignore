@@ -5,6 +5,9 @@
 **.out
 **.log
 **.toc
+**.bcf
+**.run.xml
+0
 /*.pdf
 # Ignore all "picture" subdirectories in Papers
 /pictures/**
