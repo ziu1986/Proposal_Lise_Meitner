@@ -1,18 +1,18 @@
 \documentclass[11pt, a4paper, oneside, article]{memoir}
-\DisemulatePackage{setspace}            % Make sure package is not ignored
-
-\usepackage[german, english]{babel}
-% Set the margins of the document
+\usepackage[german, english]{babel}     % Langauge setting
+% Set the margins of the document memoir style
 \setlrmarginsandblock{2cm}{2cm}{*}
 \setulmarginsandblock{2cm}{*}{1}
 \checkandfixthelayout 
-%\usepackage[margin=2cm]{geometry}       
+\DisemulatePackage{setspace}            % Make sure package is not ignored by memoir class      
 \usepackage[onehalfspacing]{setspace}   % Set the line spacing of the document
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{amsmath}                    % Advanced mathsymbols
 \usepackage{chemformula}                % Chemical formulas
-\usepackage[acronym]{glossaries}        % Abbreviation glossary
+\usepackage{pgfgantt}                   % GANTT charts
+% Abbreviation glossary
+\usepackage[acronym]{glossaries}        
 \makeglossaries                         % Generate the glossary
 % Bibliography with biblatex
 \usepackage[citestyle=alphabetic,bibstyle=authoryear, citestyle=authoryear, maxbibnames=100, maxcitenames=2, sorting=ynt, backend=biber]{biblatex}
@@ -21,7 +21,7 @@
 \usepackage{csquotes, xpatch}
 \usepackage{etex, etoolbox, keyval, ifthen, url} % Needed for chicago-style citations
 
-\chapterstyle{bringhurst}               % Style for memoir
+\chapterstyle{bringhurst}               % Set style for memoir
 \graphicspath{{pictures/}}              % Set graphics path
 
 \newcommand{\pcite}[1]{\parencite{#1}}
