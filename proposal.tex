@@ -1,10 +1,14 @@
 \documentclass[11pt, a4paper, oneside, article]{memoir}
-\usepackage[german, english]{babel}     % Langauge setting
-% Set the margins of the document memoir style
+% Setting for memoir
+% Set the margins of the document
 \setlrmarginsandblock{2cm}{2cm}{*}
 \setulmarginsandblock{2cm}{*}{1}
-\checkandfixthelayout 
-\DisemulatePackage{setspace}            % Make sure package is not ignored by memoir class      
+\checkandfixthelayout
+\captionnamefont{\bfseries\small}
+\captiontitlefont{\small}
+\DisemulatePackage{setspace}            % Make sure package is not ignored
+%
+\usepackage[german, english]{babel}     % Langauge setting
 \usepackage[onehalfspacing]{setspace}   % Set the line spacing of the document
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -37,10 +41,11 @@ Ozone is an important trace gas in the atmosphere. In accordance with its effect
 
 \chapter{Research questions}
 
-\begin{wrapfigure}{R}{0.5\textwidth} % R - floating; r - h!
+\begin{wrapfigure}[19]{R}[0pt]{0.5\textwidth}
+  % R - floating; r - h! [narrow lines] <- reduce whitespace below
   \centering
   \includegraphics[width=0.48\textwidth]{ozone_es_scheme}
-  \caption{Schematic view of the importance of ozone in Earth System Models (ESM). Ozone inflicts damage to vegetation. Ozone affects photosynthesis negatively and hence net primary production (NPP) (-> carbon cycle). Ozone affects opening and closing of stomata (positively and negatively) and hence transpiration and evaporation (ET) of plants (-> water cycle). Both affect the processing of nutrients (-> nutrient cycle). Ozone damage on vegetation causes positive and negative feedback on tropospheric ozone concentrations and hence on air quality and projected radiative forcing (RF) \pcite{Nat:Sitch2007}.}
+  \caption{Schematic view of the importance of ozone in Earth System Models (ESM). Ozone inflicts damage to vegetation. Ozone affects photosynthesis negatively and hence net primary production (NPP) ($\rightarrow$ carbon cycle). Ozone affects opening and closing of stomata (positively and negatively) and hence transpiration and evaporation (ET) of plants ($\rightarrow$ water cycle). Both affect the processing of nutrients ($\rightarrow$ nutrient cycle). Ozone damage on vegetation causes positive and negative feedback on tropospheric ozone concentrations and hence on air quality and projected radiative forcing (RF) \pcite{Nat:Sitch2007}.}
   \label{fig:ozone_es_scheme}
 \end{wrapfigure}
 
@@ -52,14 +57,14 @@ Ozone damage reduces plant photosynthesis and stomatal conductance and therefore
 The work will be based on the latest release series of the \gls{cesm} and its coupled components, \gls{clm}~5, \gls{cam}~6 with online (super-fast) chemistry (IMPACT model, Rotman et al., 2004).
 
 
-Photosynthesis (and hence the carbon cycle) in \gls{clm}~5 is tied to plant nutrient dynamics (dark gray cycles depicted in Fig. 1) which incorporates the \gls{fun} model (Fisher et al., 2010; Brzostek et al., 2014; and Shi et al., 2016). The concept of FUN is that nitrogen uptake requires an investment of energy (e.g. carbon) and that there is a large number of potential sources of nitrogen available in the environment. The ratio of carbon invested to acquire nitrogen is therefore treated as a cost. FUN calculates the rate of symbiotic nitrogen fixation for nitrogen passed directly to the plant and passed as inorganic ammonium to the soil (Cleveland et al. 1999), separately. Nutrient limitation is represented by a variable plant C:N ratio which allows plants to adjust their C:N ratio at the leaf level at the cost of nitrogen (Ghimire et al. 2016). The Leaf Use of Nitrogen for Assimilation (LUNA, Xu et al., 2012 and Ali et al., 2016) model finally links these with photosynthesis. The LUNA model calculates photosynthetic capacity based on optimization of the use of leaf nitrogen under different environmental conditions. Stomatal conductance is based on this nitrogen-limited photosynthesis rather than on potential photosynthesis. The maximum stomatal conductance is obtained from the Medlyn stomatal conductance model (Medlyn et al., 2011) which is preferred over Ball-Berry-type models for it’s more realistic behavior at low humidity levels (high vapor pressure deficit) (Rogers et al., 2017).  
+\textbf{Photosynthesis} (and hence the carbon cycle) in \gls{clm}~5 is tied to plant nutrient dynamics (dark gray cycles depicted in Fig. 1) which incorporates the \gls{fun} model (Fisher et al., 2010; Brzostek et al., 2014; and Shi et al., 2016). The concept of FUN is that nitrogen uptake requires an investment of energy (e.g. carbon) and that there is a large number of potential sources of nitrogen available in the environment. The ratio of carbon invested to acquire nitrogen is therefore treated as a cost. FUN calculates the rate of symbiotic nitrogen fixation for nitrogen passed directly to the plant and passed as inorganic ammonium to the soil (Cleveland et al. 1999), separately. Nutrient limitation is represented by a variable plant C:N ratio which allows plants to adjust their C:N ratio at the leaf level at the cost of nitrogen (Ghimire et al. 2016). The Leaf Use of Nitrogen for Assimilation (LUNA, Xu et al., 2012 and Ali et al., 2016) model finally links these with photosynthesis. The LUNA model calculates photosynthetic capacity based on optimization of the use of leaf nitrogen under different environmental conditions. Stomatal conductance is based on this nitrogen-limited photosynthesis rather than on potential photosynthesis. The maximum stomatal conductance is obtained from the Medlyn stomatal conductance model (Medlyn et al., 2011) which is preferred over Ball-Berry-type models for it’s more realistic behavior at low humidity levels (high vapor pressure deficit) (Rogers et al., 2017).  
 As a plant hydraulic stress routine explicitly models water transport through the vegetation according to a simple hydraulic framework (Kennedy et al., 2019), stomatal conductance is also a function of prognostic leaf water potential and hence forced by transpiration. Water stress is calculated as the ratio of attenuated stomatal conductance to maximum stomatal conductance.
 Biogenic emissions (MAGAN) model…?
 
 \chapter{Work packages and tasks}
 
 %Print the glossary
-\printglossaries
+\printglossaries[title={List of Abbreviations and acronyms}]
 
 \newpage
 \printbibliography[env=bibliography]
