@@ -1,0 +1,30 @@
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \centering
+  \begin{ganttchart}[vgrid, hgrid]{1}{24}
+    \gantttitle{ODINA}{24} \\
+    \gantttitlelist{1,...,24}{1} \\
+    \ganttgroup{WP0}{1}{3} \\
+    \ganttbar{T0.1}{1}{3} \\
+    \ganttbar{T0.2}{1}{3} \\
+    \ganttgroup{WP1}{1}{6} \\
+    \ganttbar{T1.1}{1}{3} \\
+    \ganttmilestone{Milestone}{3} \ganttnewline
+    \ganttbar{T1.2}{2}{6} \\
+    \ganttgroup{WP2}{1}{3} \\
+    \ganttbar{T0.1}{1}{3} \\
+    \ganttbar{T0.2}{1}{3} \\
+    \ganttgroup{WP3}{1}{3} \\
+    \ganttbar{T0.1}{1}{3} \\
+    \ganttbar{T0.2}{1}{3} \\
+    \ganttgroup{WP4}{1}{3} \\
+    \ganttbar{T0.1}{1}{3} \\
+    \ganttbar{T0.2}{1}{3} \\
+    %\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
+    %\ganttmilestone{Milestone}{7} \ganttnewline
+    \ganttbar{Final Task}{8}{12}
+    %\ganttlink{elem2}{elem3}
+    %\ganttlink{elem3}{elem4}
+  \end{ganttchart}
+  \caption{GANTT chart.}
+  \label{fig:gantt}
+\end{wrapfigure}
