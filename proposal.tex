@@ -4,12 +4,13 @@
 \setlrmarginsandblock{2cm}{2cm}{*}
 \setulmarginsandblock{2cm}{*}{1}
 \checkandfixthelayout
+\OnehalfSpacing
 \captionnamefont{\bfseries\small}
 \captiontitlefont{\small}
-\DisemulatePackage{setspace}            % Make sure package is not ignored
+%\DisemulatePackage{setspace}            % Make sure package is not ignored
+%\usepackage[onehalfspacing]{setspace}   % Set the line spacing of the document
 %
 \usepackage[german, english]{babel}     % Langauge setting
-\usepackage[onehalfspacing]{setspace}   % Set the line spacing of the document
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{wrapfig}                    % Wrapping text arround figures
@@ -30,8 +31,6 @@
 
 \chapterstyle{bringhurst}               % Set style for memoir
 \graphicspath{{pictures/}}              % Set graphics path
-
-\newcommand{\pcite}[1]{\parencite{#1}}
 
 \begin{document}
 \include{latex_setup/abbreviations}
