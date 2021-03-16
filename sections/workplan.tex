@@ -1,30 +1,30 @@
 \section*{Work packages and tasks}
 
-WP0 - Installation at new workplace
-T0.1 Getting started and up to speed with institute and settle down in the country
-T0.2 Setting up \gls{cesm} on institute/national infrastructure
-WP1 - Model integration
-T1.1 Finish integration and testing of \gls{odina} in \gls{clm}~5
-T1.2 Finish and publish development paper on \gls{odina}
-WP2 - Model coupling (collaboration with \gls{ncar})
-T2.1 Reverse engineering of dry deposition (understanding model structure and making the right physical choice in which ozone concentration to take)
-T2.2 Technically coupling \gls{cam}-chem ozone concentrations to \gls{odina}
-T2.2.a BestCase if ongoing restructuring of couplers in \gls{cesm} is done -> final coupler integration
-T2.2.b WorstCase: temporary coupling using old infrastructure and come back to 2.2.a at later stage if BestCase is reached within the given time frame
-WP3 - Model evaluation
-T3.1 Collection of evaluation data 
-T3.1.1 Site level evaluation (ideally relevant fluxnet sites with observed ozone)
-T3.1.2 Global scale - surface ozone products (difficult - \gls{ecmwf} \gls{cam} reanalysis sucks) and GPP products (Sentinel satellites? there are issues with \gls{modis} here)
-T3.2 Write evaluation paper
---- BEST CASE SCENARIO----
-only if WP1 - WP3 are finished within the first 12 months
-WP4 - Update (tuning) of model parameter
-T4.1 Implicit ozone effect ought to make it necessary to reevaluate parameters (e.g. $\mathrm{J_{max}}$0 in \gls{luna})
-T4.2 Implicite “healing” methode
-WP5 - Production runs and climate projections?
-T5.1 Run \gls{cesm} coupled of climatological timescales (at least one SSP)
-T5.2 Study climate impact of ozone damage (gpp, chemistry, air quality...)
-
+WP0 - Installation at new workplace\\
+T0.1 Getting started and up to speed with institute and settle down in the country\\
+T0.2 Setting up \gls{cesm} on institute/national infrastructure\\
+WP1 - Model integration\\
+T1.1 Finish integration and testing of \gls{odina} in \gls{clm}~5\\
+T1.2 Finish and publish development paper on \gls{odina}\\
+WP2 - Model coupling (collaboration with \gls{ncar})\\
+T2.1 Reverse engineering of dry deposition (understanding model structure and making the right physical choice in which ozone concentration to take)\\
+T2.2 Technically coupling \gls{cam}-chem ozone concentrations to \gls{odina}\\
+T2.2.a BestCase if ongoing restructuring of couplers in \gls{cesm} is done -> final coupler integration\\
+T2.2.b WorstCase: temporary coupling using old infrastructure and come back to 2.2.a at later stage if BestCase is reached within the given time frame\\
+WP3 - Model evaluation\\
+T3.1 Collection of evaluation data \\
+T3.1.1 Site level evaluation (ideally relevant fluxnet sites with observed ozone)\\
+T3.1.2 Global scale - surface ozone products (difficult - \gls{ecmwf} \gls{cam} reanalysis sucks) and GPP products (Sentinel satellites? there are issues with \gls{modis} here)\\
+T3.2 Write evaluation paper\\
+--- BEST CASE SCENARIO----\\
+only if WP1 - WP3 are finished within the first 12 months\\
+WP4 - Update (tuning) of model parameter\\
+T4.1 Implicit ozone effect ought to make it necessary to reevaluate parameters (e.g. $\mathrm{J_{max}}$0 in \gls{luna})\\
+T4.2 Implicite “healing” methode\\
+WP5 - Production runs and climate projections?\\
+T5.1 Run \gls{cesm} coupled of climatological timescales (at least one SSP)\\
+T5.2 Study climate impact of ozone damage (gpp, chemistry, air quality...)\\
+\\
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \centering
@@ -38,15 +38,15 @@ T5.2 Study climate impact of ozone damage (gpp, chemistry, air quality...)
     \ganttbar{T1.1}{1}{3} \\
     \ganttmilestone{Milestone}{3} \ganttnewline
     \ganttbar{T1.2}{2}{6} \\
-    \ganttgroup{WP2}{1}{3} \\
+    \ganttgroup{WP2}{1}{15} \\
     \ganttbar{T2.1}{1}{3} \\
     \ganttbar{T2.2}{1}{3} \\
     \ganttgroup{WP3}{1}{3} \\
     \ganttbar{T3.1}{1}{3} \\
     \ganttbar{T3.2}{1}{3} \\
     \ganttgroup{WP4}{1}{3} \\
-    \ganttbar{T4.1}{1}{3} \\
-    \ganttbar{T4.2}{1}{3} \\
+    \ganttbar{T4.1}{15}{24} \\
+    \ganttbar{T4.2}{15}{24} \\
     %\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
     %\ganttmilestone{Milestone}{7} \ganttnewline
     %\ganttbar{Final Task}{8}{12}
