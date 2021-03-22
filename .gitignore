@@ -23,4 +23,5 @@
 /pictures/**
 # Ignore the comments subdirectory
 /comments/**
+/anlage/**
 
