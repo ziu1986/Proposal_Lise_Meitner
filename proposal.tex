@@ -20,6 +20,7 @@
 \usepackage{chemformula}                % Chemical formulas
 %\usepackage{pgfgantt}                   % GANTT charts
 \usepackage{xcolor}
+\usepackage[shortlabels]{enumitem}
 % Abbreviation glossary
 \usepackage[acronym,nogroupskip,nonumberlist,toc]{glossaries}
 \setglossarystyle{index}
@@ -38,6 +39,10 @@
 \begin{document}
 \input{latex_setup/abbreviations}
 
+\frontmatter
+\tableofcontents*
+
+\mainmatter
 \chapter{Research context}
 \input{sections/context}
 
@@ -50,6 +55,8 @@
 \chapter{Project plan}
 \input{sections/workplan}
 
+%\backmatter
+\appendix
 %Print the glossary
 \printglossaries
 
