@@ -16,7 +16,7 @@
 \usepackage{wrapfig}                    % Wrapping text arround figures
 \usepackage{amsmath}                    % Advanced mathsymbols
 \usepackage{chemformula}                % Chemical formulas
-\usepackage{pgfgantt}                   % GANTT charts
+%\usepackage{pgfgantt}                   % GANTT charts
 \usepackage{xcolor}
 % Abbreviation glossary
 \usepackage[acronym,nogroupskip,nonumberlist,toc]{glossaries}
@@ -34,20 +34,19 @@
 \graphicspath{{pictures/}}              % Set graphics path
 
 \begin{document}
-\include{latex_setup/abbreviations}
+\input{latex_setup/abbreviations}
 
 \chapter{Research context}
-\input{sections/research_context}
+\input{sections/context}
 
 \chapter{Research objective}
-\input{sections/research_question}
+\input{sections/subjective}
 
 \chapter{Methodes}
 \input{sections/methodes}
 
 \chapter{Project plan}
 \input{sections/workplan}
-
 
 %Print the glossary
 \printglossaries
