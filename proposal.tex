@@ -4,7 +4,7 @@
 \setlrmarginsandblock{2cm}{2cm}{*}
 \setulmarginsandblock{2cm}{*}{1}
 \checkandfixthelayout
-\OnehalfSpacing
+%\OnehalfSpacing
 \captionnamefont{\bfseries\small}
 \captiontitlefont{\small}
 %\DisemulatePackage{setspace}            % Make sure package is not ignored
@@ -36,7 +36,10 @@
 \chapterstyle{bringhurst}               % Set style for memoir
 \graphicspath{{pictures/}}              % Set graphics path
 
+%DOCUMENT%
 \begin{document}
+\setlength{\baselineskip}{15pt}         % 15-20 pt
+
 \input{latex_setup/abbreviations}
 
 \frontmatter
