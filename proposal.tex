@@ -33,6 +33,21 @@
 \usepackage{csquotes, xpatch}
 \usepackage{etex, etoolbox, keyval, ifthen, url} % Needed for chicago-style citations
 
+\usepackage[most]{tcolorbox}
+
+%textmarker style from colorbox doc
+\tcbset{textmarker/.style={%
+        enhanced,
+        parbox=false,boxrule=0mm,boxsep=0mm,arc=0mm,
+        outer arc=0mm,left=6mm,right=3mm,top=7pt,bottom=7pt,
+        toptitle=1mm,bottomtitle=1mm,oversize}}
+% define new colorboxes
+\newtcolorbox{importantBox}{textmarker,
+    borderline west={6pt}{0pt}{blue},
+    colback=blue!10!white}
+% define commands for easy access
+\newcommand{\important}[1]{\begin{importantBox} #1 \end{importantBox}}
+
 \chapterstyle{bringhurst}               % Set style for memoir
 \graphicspath{{pictures/}}              % Set graphics path
 
