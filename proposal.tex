@@ -7,20 +7,39 @@
 %\OnehalfSpacing
 \captionnamefont{\bfseries\small}
 \captiontitlefont{\small}
+
+\makechapterstyle{proposal}{%
+%\renewcommand{\chapterheadstart}{\vspace*{\beforechapskip}\hrule\medskip}
+\renewcommand{\chapterheadstart}{\vskip 1\baselineskip\medskip}
+\renewcommand{\chapnamefont}{\normalfont\large\scshape}
+\renewcommand{\chapnumfont}{\bfseries\LARGE\scshape}
+\renewcommand{\chaptitlefont}{\normalfont\Large\scshape}
+%\renewcommand{\printchaptername}{\S}
+\renewcommand{\printchaptername}{}
+\renewcommand{\chapternamenum}{ }
+\renewcommand{\printchapternum}{\chapnumfont \thechapter}
+\renewcommand{\afterchapternum}{\hspace{0em} }
+\renewcommand{\afterchaptertitle}{\par\nobreak\medskip\hrule\vskip 1\baselineskip}
+%\afterchapskip}
+}
+\chapterstyle{proposal}
+\setsecheadstyle{\normalfont\Large\scshape}
 %\DisemulatePackage{setspace}            % Make sure package is not ignored
 %\usepackage[onehalfspacing]{setspace}   % Set the line spacing of the document
 %
-\usepackage[german, english]{babel}     % Langauge setting
+\usepackage[german, english]{babel}     % Language setting
 \usepackage[utf8]{inputenc}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{graphicx}
-\usepackage{wrapfig}                    % Wrapping text arround figures
+\usepackage{wrapfig}                    % Wrapping text around figures
 %\usepackage{subfigure}                 % Doesn't work with memoir class
 \newsubfloat{figure}% Allow subfloats in figure environment
 \usepackage{amsmath}                    % Advanced mathsymbols
 \usepackage{chemformula}                % Chemical formulas
 %\usepackage{pgfgantt}                   % GANTT charts
 \usepackage[shortlabels]{enumitem}
+\usepackage[colorlinks=false,linkcolor=black,urlcolor=black,bookmarksopen=true]{hyperref}
+\usepackage{bookmark}
 % Abbreviation glossary
 \usepackage[acronym,nogroupskip,nonumberlist,toc]{glossaries}
 \setglossarystyle{index}
@@ -48,7 +67,7 @@
 % define commands for easy access
 \newcommand{\important}[1]{\begin{importantBox} #1 \end{importantBox}}
 
-\chapterstyle{bringhurst}               % Set style for memoir
+\chapterstyle{proposal}             % Set style for memoir, bringhurst
 \graphicspath{{pictures/}}              % Set graphics path
 
 %DOCUMENT%
