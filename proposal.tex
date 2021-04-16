@@ -7,20 +7,24 @@
 %\OnehalfSpacing
 \captionnamefont{\bfseries\small}
 \captiontitlefont{\small}
-
+\usepackage{calc}
+\newif\ifNoChapNumber
 \makechapterstyle{proposal}{%
-%\renewcommand{\chapterheadstart}{\vspace*{\beforechapskip}\hrule\medskip}
 \renewcommand{\chapterheadstart}{\vskip 1\baselineskip\medskip}
 \renewcommand{\chapnamefont}{\normalfont\large\scshape}
 \renewcommand{\chapnumfont}{\bfseries\LARGE\scshape}
 \renewcommand{\chaptitlefont}{\normalfont\Large\scshape}
-%\renewcommand{\printchaptername}{\S}
-\renewcommand{\printchaptername}{}
-\renewcommand{\chapternamenum}{ }
-\renewcommand{\printchapternum}{\chapnumfont \thechapter}
-\renewcommand{\afterchapternum}{\hspace{0em} }
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{}
+\renewcommand\printchaptertitle[1]{%
+  \begin{tabular}{@{}p{1cm}|!{\quad}p{\textwidth-1cm-2em-4\tabcolsep }}
+    \ifNoChapNumber\relax\else\chapnumfont \thechapter\fi
+    & \chaptitlefont ##1
+  \end{tabular}
+  \NoChapNumberfalse}
+\renewcommand\printchapternonum{\NoChapNumbertrue}
 \renewcommand{\afterchaptertitle}{\par\nobreak\medskip\hrule\vskip 1\baselineskip}
-%\afterchapskip}
 }
 \chapterstyle{proposal}
 \setsecheadstyle{\normalfont\Large\scshape}
