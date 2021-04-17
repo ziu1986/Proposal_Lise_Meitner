@@ -1,0 +1,66 @@
+\ProvidesPackage{myproposal}
+% Setting for memoir
+% Set the margins of the document
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{*}{1}
+\checkandfixthelayout
+%\OnehalfSpacing
+\captionnamefont{\bfseries\small}
+\captiontitlefont{\small}
+\usepackage{calc}
+\newif\ifNoChapNumber
+\makechapterstyle{proposal}{%
+\renewcommand{\chapterheadstart}{\vskip 1\baselineskip\medskip}
+\renewcommand{\chapnamefont}{\normalfont\large\scshape}
+\renewcommand{\chapnumfont}{\bfseries\LARGE\scshape}
+\renewcommand{\chaptitlefont}{\normalfont\Large\scshape}
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{}
+\renewcommand\printchaptertitle[1]{%
+  \begin{tabular}{@{}p{1cm}|!{\quad}p{\textwidth-1cm-2em-4\tabcolsep }}
+    \ifNoChapNumber\relax\else\chapnumfont \thechapter\fi
+    & \chaptitlefont ##1
+  \end{tabular}
+  \NoChapNumberfalse}
+\renewcommand\printchapternonum{\NoChapNumbertrue}
+\renewcommand{\afterchaptertitle}{\par\nobreak\medskip\hrule\vskip 1\baselineskip}
+}
+\chapterstyle{proposal}
+\setsecheadstyle{\normalfont\Large\scshape}
+%\DisemulatePackage{setspace}            % Make sure package is not ignored
+%\usepackage[onehalfspacing]{setspace}   % Set the line spacing of the document
+%
+\usepackage[german, english]{babel}     % Language setting
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}                    % Wrapping text around figures
+%\usepackage{subfigure}                 % Doesn't work with memoir class
+\newsubfloat{figure}% Allow subfloats in figure environment
+\usepackage{amsmath}                    % Advanced mathsymbols
+\usepackage{chemformula}                % Chemical formulas
+%\usepackage{pgfgantt}                   % GANTT charts
+\usepackage[shortlabels]{enumitem}
+\usepackage[colorlinks=false,linkcolor=black,urlcolor=black,bookmarksopen=true]{hyperref}
+\usepackage{bookmark}
+
+\usepackage{csquotes, xpatch}
+\usepackage{etex, etoolbox, keyval, ifthen, url} % Needed for chicago-style citations
+
+\usepackage[most]{tcolorbox}
+
+%textmarker style from colorbox doc
+\tcbset{textmarker/.style={%
+        enhanced,
+        parbox=false,boxrule=0mm,boxsep=0mm,arc=0mm,
+        outer arc=0mm,left=6mm,right=3mm,top=7pt,bottom=7pt,
+        toptitle=1mm,bottomtitle=1mm,oversize}}
+% define new colorboxes
+\newtcolorbox{importantBox}{textmarker,
+    borderline west={6pt}{0pt}{blue},
+    colback=blue!10!white}
+% define commands for easy access
+\newcommand{\important}[1]{\begin{importantBox} #1 \end{importantBox}}
+
+\chapterstyle{proposal}             % Set style for memoir, bringhurst
