@@ -1,13 +1,15 @@
 The research will apply and extend the latest release series of the \gls{cesm} and its components, \gls{clm}~5 including \gls{bvoc} emissions (\gls{megan} model \parencite{ACP:Guenther2006}, \gls{cam}~6 with online (super-fast) chemistry (\gls{impact} model, \parencite{JGR:Rotman2004}). Below, we provide a brief technical account of the model components of \gls{cesm} most relevant to the planned work, \gls{clm} including \gls{megan}, and \gls{cam}. Subsequently we review the Lombardozzi model of ozone damage and close by introducing the new process oriented plant physiological model of ozone damage, developed by the applicant, including the planned integration into \gls{clm} that stands at the core of the \gls{odina} project.
 
-\begin{wrapfigure}[33]{R}[0pt]{0.5\textwidth}
+%\begin{wrapfigure}[33]{R}[0pt]{0.5\textwidth}
   % R - floating; r - h! [narrow lines] <- reduce whitespace below [17]
+\begin{figure}[!bh]
   \centering
-  \includegraphics[width=0.48\textwidth]{ozone_luna_scheme}
+  \includegraphics[width=0.68\textwidth]{ozone_luna_scheme} % 0.48
   \caption{Schematic view of the \gls{odina} model integration into \gls{clm}~5. Round boxes represent affected tropospheric chemistry (\gls{cam}-chem) and trace gas concentrations, e.g. \ch{[CO_2]}, \ch{[O_3]}, \ch{[H_2O]}. Annotated arrows denote the associated process. Squared boxes represent processes in the land model (\gls{clm}). Plants \textbf{\color{darkgray}invest carbon} to \textbf{\color{darkgray}take up nutrients}. A \textbf{\color{OliveGreen}variable \ch{C:N} ratio} at leaf level steers the optimization of electron transport ($\mathrm{J_{max}}$) and carboxylation rate ($\mathrm{V_{cmax}}$), which determine photosynthesis ($\mathrm{A_n}$) and stomatal conductance ($\mathrm{g_{sto}}$). $\mathrm{g_{sto}}$ controls transpiration and thus \textbf{\color{blue}plant hydraulics}. \textbf{\color{red}Ozone uptake} is determined by $\mathrm{g_{sto}}$ and reduces both $\mathrm{J_{max}}$ and $\mathrm{V_{cmax}}$.
 }
   \label{fig:ozone_odina}
-\end{wrapfigure}
+\end{figure}
+%\end{wrapfigure}
 
 \section{Community Earth System Model (CESM)}
 \label{sec:cesm}
