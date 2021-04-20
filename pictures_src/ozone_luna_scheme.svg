@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.62"
-     inkscape:cx="36.887497"
+     inkscape:cx="-46.177019"
      inkscape:cy="548.94918"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer5"
      showgrid="true"
      inkscape:window-width="1863"
      inkscape:window-height="1025"
@@ -326,7 +326,8 @@
      transform="translate(6.8491406,71.60497)"
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="boxes">
+     inkscape:label="boxes"
+     sodipodi:insensitive="true">
     <g
        transform="translate(-7.026898,-7.113059)"
        id="g1881">
@@ -359,23 +360,6 @@
          width="62.088001"
          id="rect1566"
          style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.11611497;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         transform="rotate(0.560168)"
-         id="text1590"
-         y="118.27016"
-         x="180.07782"
-         style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4c8800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#4c8800;fill-opacity:1;stroke-width:0.26458332"
-           y="118.27016"
-           x="180.07782"
-           id="tspan1588"
-           sodipodi:role="line">Optimized</tspan><tspan
-           id="tspan1592"
-           style="fill:#4c8800;fill-opacity:1;stroke-width:0.26458332"
-           y="125.84109"
-           x="180.07782"
-           sodipodi:role="line" /></text>
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          ns0:jacobian_sqrt="1.197605"
@@ -687,24 +671,14 @@
          id="rect2105-4"
          style="opacity:0.25;fill:#4c8800;fill-opacity:1;stroke:none;stroke-width:0.917;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="152.40472"
-       y="38.987011"
-       id="text1663"><tspan
-         sodipodi:role="line"
-         id="tspan1661"
-         x="152.40472"
-         y="38.987011"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#d40000;fill-opacity:1;stroke-width:0.26458332">Adjusted</tspan></text>
   </g>
   <g
      inkscape:label="cycles"
      id="layer4"
      inkscape:groupmode="layer"
      style="display:inline"
-     transform="translate(-91.538769,-16.863146)">
+     transform="translate(-91.538769,-16.863146)"
+     sodipodi:insensitive="true">
     <g
        id="g13427"
        transform="translate(-2.1166998,2.9398094)">
@@ -759,7 +733,7 @@
 <polygon
    id="polygon12707"
    style="fill:#d40000;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
-   points="151.26,654.75 151.26,655.15 150.29,655.15 150.29,664.29 151.26,664.29 151.26,664.68 149.89,664.68 149.89,654.75 " />
+   points="151.26,655.15 150.29,655.15 150.29,664.29 151.26,664.29 151.26,664.68 149.89,664.68 149.89,654.75 151.26,654.75 " />
 <path
    id="path12709"
    style="fill:#d40000;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
@@ -773,7 +747,7 @@
 <polygon
    id="polygon12713"
    style="fill:#d40000;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
-   points="166.68,664.68 165.32,664.68 165.32,664.29 166.29,664.29 166.29,655.15 165.32,655.15 165.32,654.75 166.68,654.75 " />
+   points="165.32,664.68 165.32,664.29 166.29,664.29 166.29,655.15 165.32,655.15 165.32,654.75 166.68,654.75 166.68,664.68 " />
 </g>    <g
        id="g13427-7"
        transform="translate(164.5708,68.497686)">
@@ -852,7 +826,7 @@
        ns0:jacobian_sqrt="1.197605"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#d40000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">
 <polygon
-   points="151.26,664.29 151.26,664.68 149.89,664.68 149.89,654.75 151.26,654.75 151.26,655.15 150.29,655.15 150.29,664.29 "
+   points="151.26,664.68 149.89,664.68 149.89,654.75 151.26,654.75 151.26,655.15 150.29,655.15 150.29,664.29 151.26,664.29 "
    style="fill:#000000;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
    id="polygon1191" />
 <path
@@ -871,7 +845,7 @@
    style="fill:#000000;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
    id="path1197" />
 <polygon
-   points="174.56,655.15 173.59,655.15 173.59,654.75 174.96,654.75 174.96,664.68 173.59,664.68 173.59,664.29 174.56,664.29 "
+   points="173.59,655.15 173.59,654.75 174.96,654.75 174.96,664.68 173.59,664.68 173.59,664.29 174.56,664.29 174.56,655.15 "
    style="fill:#000000;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
    id="polygon1199" />
 </g>    <rect
@@ -907,7 +881,7 @@
 <polygon
    id="polygon1509"
    style="fill:#ffffff;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
-   points="151.26,655.15 150.29,655.15 150.29,664.29 151.26,664.29 151.26,664.68 149.89,664.68 149.89,654.75 151.26,654.75 " />
+   points="150.29,655.15 150.29,664.29 151.26,664.29 151.26,664.68 149.89,664.68 149.89,654.75 151.26,654.75 151.26,655.15 " />
 <path
    id="path1511"
    style="fill:#ffffff;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
@@ -926,7 +900,7 @@
 <polygon
    id="polygon1517"
    style="fill:#ffffff;fill-opacity:1;stroke:#d40000;stroke-width:0;stroke-opacity:1"
-   points="174.28,664.68 174.28,664.29 175.25,664.29 175.25,655.15 174.28,655.15 174.28,654.75 175.65,654.75 175.65,664.68 " />
+   points="174.28,664.29 175.25,664.29 175.25,655.15 174.28,655.15 174.28,654.75 175.65,654.75 175.65,664.68 174.28,664.68 " />
 </g>  </g>
   <g
      transform="translate(6.8491406,71.60497)"
@@ -994,5 +968,38 @@
        id="path2546-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="arrow_annote">
+    <text
+       transform="rotate(0.56016807)"
+       id="text1590"
+       y="193.44081"
+       x="192.55217"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#4c8800;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#4c8800;fill-opacity:1;stroke-width:0.26458332"
+         y="193.44081"
+         x="192.55217"
+         id="tspan1588"
+         sodipodi:role="line">Optimized</tspan><tspan
+         id="tspan1592"
+         style="fill:#4c8800;fill-opacity:1;stroke-width:0.26458332"
+         y="201.01175"
+         x="192.55217"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="158.98076"
+       y="112.21362"
+       id="text1663"><tspan
+         sodipodi:role="line"
+         id="tspan1661"
+         x="158.98076"
+         y="112.21362"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#d40000;fill-opacity:1;stroke-width:0.26458332">Adjusted</tspan></text>
   </g>
 </svg>
