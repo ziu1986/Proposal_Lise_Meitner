@@ -10,7 +10,8 @@
 \usepackage{calc}
 \newif\ifNoChapNumber
 \makechapterstyle{proposal}{%
-\renewcommand{\chapterheadstart}{\vskip 1\baselineskip\medskip}
+  \setlength{\beforechapskip}{-22pt}
+\renewcommand{\chapterheadstart}{\beforechapskip 1\baselineskip\medskip}
 \renewcommand{\chapnamefont}{\normalfont\large\scshape}
 \renewcommand{\chapnumfont}{\bfseries\LARGE\scshape}
 \renewcommand{\chaptitlefont}{\normalfont\Large\scshape}
@@ -24,7 +25,7 @@
   \end{tabular}
   \NoChapNumberfalse}
 \renewcommand\printchapternonum{\NoChapNumbertrue}
-\renewcommand{\afterchaptertitle}{\par\nobreak\medskip\hrule\vskip 1\baselineskip}
+\renewcommand{\afterchaptertitle}{\par\nobreak\medskip\hrule\vskip 0.75\baselineskip}
 }
 \chapterstyle{proposal}
 \setsecheadstyle{\normalfont\Large\scshape}
