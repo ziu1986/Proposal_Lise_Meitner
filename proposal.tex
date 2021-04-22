@@ -8,7 +8,7 @@
 \makeglossaries                         % Generate the glossary
 
 % Bibliography with biblatex
-\usepackage[style=authoryear-comp, bibstyle=authortitle, citestyle=authoryear-comp, maxcitenames=1, maxbibnames=100, sorting=nty, uniquelist=false, backend=biber]{biblatex}
+\usepackage[style=authoryear-comp, bibstyle=authortitle, citestyle=authoryear-comp, maxcitenames=1, maxbibnames=100, sorting=nty, uniquelist=false, giveninits=true, backend=biber]{biblatex}
 \addbibresource[location=local, datatype=bibtex]{atmo.bib}
 
 \graphicspath{{pictures/}}              % Set graphics path
@@ -19,8 +19,20 @@
 
 \input{latex_setup/abbreviations}
 
-\frontmatter
-\tableofcontents*
+%\frontmatter
+%\titlepage
+\begin{center}
+   \vspace*{-1\baselineskip}
+    \huge
+    \textbf{Lise Meitner Proposal}\\
+    \vspace{0.5\baselineskip}
+    \LARGE   
+    \gls{odina}
+    \vspace{0.5\baselineskip}
+    \glsresetall
+    \normalsize
+    \tableofcontents*
+\end{center}
 
 \mainmatter
 \chapter{Research context}
@@ -64,12 +76,20 @@
 \vfill
 \input{sections/signature}
 
-%\backmatter
-\appendix
 %Print the glossary
-\printglossaries
+\printglossary[type=\acronymtype,title={List of abbreviations}]
+%\printglossaries
 
 \newpage
-\printbibliography[env=bibliography]
+
+\backmatter
+\setcounter{page}{1}
+\appendix
+\printbibliography[env=bibliography, title=Annex 1 - References]
+\chapter{Annex 2 - CVs and description of previous research achievements}
+\chapter{Annex 3 - Career plan}
+\chapter{Annex 4 - Co-applicant's letter of recommendation}
+\chapter{Annex 5 - Collaboration letters}
+\chapter{Annex 6 - Additional recommendation}
 
 \end{document}
