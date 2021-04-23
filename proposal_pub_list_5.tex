@@ -1,0 +1,43 @@
+\documentclass[11pt, a4paper, oneside, article]{memoir}
+% Load the preamble
+\usepackage{myproposal}
+
+% Bibliography with biblatex
+\usepackage[style=authoryear-comp, bibstyle=authortitle, citestyle=authoryear-comp, maxcitenames=1, maxbibnames=100, sorting=nty, uniquelist=false, giveninits=true, backend=biber]{biblatex}
+\addbibresource[location=local, datatype=bibtex]{proposal_pub_list_5.bib}
+
+%DOCUMENT%
+\begin{document}
+\setlength{\baselineskip}{15pt}         % 15-20 pt
+\section{Quality assured}
+\cite{ACP:Falk2017}
+\cite{GMD:Falk2018}
+\cite{GMD:Falk2019}
+\cite{wcd-1-481-2020}
+\cite{app10124222}
+\cite{ISI:000576640000015}
+\cite{ISI:000467578000001}
+\cite{ISI:000457948900009}
+\cite{ISI:000464504800004}
+\cite{ISI:000448091600029}
+\cite{ISI:000436245600022}
+\cite{ISI:000436245600026}
+\cite{ISI:000423829500001}
+\cite{ISI:000407104400005}
+\cite{ISI:000398187900001}
+\cite{ISI:000398187800003}
+\section{Non-quality assured}
+\cite{IVL:Karlsson2021}
+\cite{EGU:Falk2021}
+\cite{ICPTF:Falk2021}
+\cite{ICPTF:Falk2020}
+\cite{CESMWP:Falk2021}
+\cite{blog:Falk2021}
+
+\backmatter
+\setcounter{page}{1}
+\appendix
+\printbibliography[type=article,title=Quality assured]
+\printbibliography[nottype=article,title=Non-quality assured]
+
+\end{document}
