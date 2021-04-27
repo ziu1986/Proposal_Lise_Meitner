@@ -22,19 +22,19 @@
 %\frontmatter
 %\titlepage
 \begin{center}
-   \vspace*{-1\baselineskip}
+   \vspace*{-3\baselineskip}
     \huge
-    \textbf{Lise Meitner Proposal}\\
+    \textbf{Lise-Meitner Fellowship Proposal}\\
     \vspace{0.5\baselineskip}
     \LARGE   
-    \gls{odina}
+    \textbf{\gls{odina}}
     \vspace{0.5\baselineskip}
     \glsresetall
     \normalsize
     \tableofcontents*
 \end{center}
 
-\mainmatter
+%\mainmatter
 \chapter{Research context}
 \label{c:context}
 \input{sections/research_context}
@@ -47,17 +47,23 @@
 \label{c:innovation}
 \input{sections/innovation}
 
+\vspace{-0.5\baselineskip}
 \chapter{Research methods \& model description}
 \label{c:methods}
 \input{sections/methods_model_description}
 
+\newpage
+%\vspace{-.5\baselineskip}
 \chapter{Intended collaborations}
 \label{c:collab}
 \input{sections/collaborations}
 
+\vspace{-.5\baselineskip}
 \chapter{Work plan \& timeline}
 \label{c:project_plan}
 \input{sections/project_plan_timeline}
+
+\FloatBarrier
 
 \chapter{Research-related qualifications of the researchers involved}
 \input{sections/qualifications}
@@ -72,24 +78,19 @@
 \label{c:info_dev}
 \input{sections/institution_career_development}
 
-%\vspace*{5cm}
-\vfill
-\input{sections/signature}
-
 %Print the glossary
-\printglossary[type=\acronymtype,title={11 List of abbreviations}]
+\printglossary[type=\acronymtype,title={List of abbreviations},numberedsection]
 %\printglossaries
 
-\newpage
-
 \backmatter
-\setcounter{page}{1}
+\graphicspath{{appendices/}}              % Set graphics path
 \appendix
-\printbibliography[env=bibliography, title=Annex 1 - References]
-\chapter{Annex 2 - CVs and description of previous research achievements}
-\chapter{Annex 3 - Career plan}
-\chapter{Annex 4 - Co-applicant's letter of recommendation}
-\chapter{Annex 5 - Collaboration letters}
-\chapter{Annex 6 - Additional recommendation}
+\newpage
+\chapter{Appendices}
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\input{sections/appendices}
 
 \end{document}
